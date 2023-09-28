@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Detalhes do Produto</title>
+  </head>
+  <body>
+    <div class="container">
+      <a id="voltar" href="index.html"
+        ><span id="logo">Perassi<span>Store</span></span></a
+      >
+
+      <div class="row">
+
+        <div class="col-6">
+          <img
+            src="verdao.jpeg"
+            class="img-fluid"
+            style="align-items: center; height: 25rem"
+            alt="Roronoa Zoro Funko Pop"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <h3>Manto Sagrado do Verdão</h3>
+              <p>
+                Camiseta feita com o mais puro linho, para dar inveja em outros times.
+              </p>
+              <div>
+                <div class="card border-light mb-3" style="max-width: 18rem">
+                  <div class="card-header">
+                    <h4>Detalhes do Produto</h4>
+                  </div>
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <td><strong>Marca:</strong></td>
+                        <td>Palmeiras</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Tema:</strong></td>
+                        <td>Futebol</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Tipo:</strong></td>
+                        <td>Camiseta</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Cor:</strong></td>
+                        <td>Verde</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Material:</strong></td>
+                        <td>Linho fino</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>
+                <strong style="font-size: xx-large; color: green" id="preco"
+                  >$1200.00</strong
+                >
+              </p>
+              Quantidade:
+              <input
+                style="border-radius: 20%; width: 10%"
+                type="number"
+                name="numero"
+                id="numeroInput"
+                value="1"
+                oninput="atualizarPreco(this.value)"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <br />
+              <a href="#" class="btn btn-primary">Adicionar a sacola</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#Videos">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Comentarios">Comentários</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="videoContent" style="display: none">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DiKvx0gRfaQ?si=bmFLCH_rXs6aKMWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <div id="fotoContent" style="display: none">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="ar.png"
+                  alt="Foto 1"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="goreta.jpeg"
+                  alt="Foto 2"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="verdao.jpeg"
+                  alt="Foto 3"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="goreta.jpeg"
+                  alt="Foto 4"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="ar.png"
+                  alt="Foto 5"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="verdao.jpeg"
+                  alt="Foto 6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="comentarioContent" style="display: none">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="media mb-3">
+                <img
+                  src="messi.jpg"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Usuário Anônimo</h5>
+                  Pai ta usando, ta maneiro..
+                </div>
+              </div>
+              <div class="media mb-3">
+                <img
+                  src="neto.jpg"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Cliente Satisfeito</h5>
+                  BÃO!
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  src="ronaldo.jpg"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Novo Cliente</h5>
+                  Deveria ter comprado duas.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="media mb-3">
+                <img
+                  src="neto.jpg"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Entusiasta</h5>
+                  Leila, compra o Bruno Henrique.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script>
+      function validarNumero(input) {
+        if (input.value < 0) {
+          input.value = 0;
+        }
+      }
+      function atualizarPreco(quantidade) {
+        quantidade = parseInt(quantidade);
+
+        if (!isNaN(quantidade)) {
+          var preco = 1200.00;
+
+          var novoPreco = preco * quantidade;
+
+          document.getElementById("preco").textContent =
+            "$" + novoPreco.toFixed(2);
+        }
+      }
+      const videoLink = document.querySelector(".nav-link[href='#Videos']");
+      const fotoLink = document.querySelector(".nav-link[href='#Fotos']");
+      const comentarioLink = document.querySelector(
+        ".nav-link[href='#Comentarios']"
+      );
+      const videoContent = document.getElementById("videoContent");
+      const fotoContent = document.getElementById("fotoContent");
+      const comentarioContent = document.getElementById("comentarioContent");
+
+      videoLink.addEventListener("click", () => {
+        videoContent.style.display = "block";
+        fotoContent.style.display = "none";
+        comentarioContent.style.display = "none";
+      });
+
+      fotoLink.addEventListener("click", () => {
+        videoContent.style.display = "none";
+        fotoContent.style.display = "block";
+        comentarioContent.style.display = "none";
+      });
+
+      comentarioLink.addEventListener("click", () => {
+        videoContent.style.display = "none";
+        fotoContent.style.display = "none";
+        comentarioContent.style.display = "block";
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

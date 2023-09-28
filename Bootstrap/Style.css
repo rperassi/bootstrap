@@ -1,0 +1,48 @@
+.IMG-Produtos {
+  align-self: center;
+  width: 50%;
+}
+
+
+a:-webkit-any-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+
+#logo {
+  font-size: x-large;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tm1{
+    width: 5%;
+}
+
+#logo span {
+  font-size: x-small;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+    /* Estilo para o container da base de fotos */
+    .photo-grid {
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas igualmente espaçadas */
+        grid-gap: 10px; /* Espaçamento entre as fotos */
+      }
+  
+      /* Estilo para cada foto */
+      .photo {
+        align-self: center;
+        width: 100%; /* Certifica-se de que cada foto ocupa 100% da largura da coluna */
+        height: auto; /* Mantém a proporção da imagem */
+        border: 1px solid #ccc; /* Adiciona uma borda para separar as fotos */
+      }
+
+      .photo img{
+        align-self: center;
+        width: 25vh;
+      }
